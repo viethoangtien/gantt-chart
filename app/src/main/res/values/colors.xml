@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#21333d</color>
+    <color name="primary">#3C5C6F</color>
+    <color name="accent">#ff7180</color>
+    <color name="accent_dark">#cc5a66</color>
+    <color name="list_item_bg">#ffffff</color>
+
+    <color name="status_0">#ffffff</color>
+    <color name="status_1">#fff0f2</color>
+    <color name="status_2">#ffe2e5</color>
+    <color name="status_3">#ffd4d8</color>
+    <color name="status_4">#ffc6cc</color>
+    <color name="status_5">#ffb8bf</color>
+    <color name="status_6">#ffa9b2</color>
+    <color name="status_7">#ff9ba6</color>
+    <color name="status_8">#ff8d99</color>
+    <color name="status_9">#ff7f8c</color>
+    <color name="status_10">#ffffff</color>
+
+    <color name="bg_start">#c4ced3</color>
+    <color name="bg_end">#ffe2e5</color>
+
+    <color name="scale_dayoff">#c4ced3</color>
+    <color name="bar_don">#ff9ba6</color>
+    <color name="bar_undone">#627c8b</color>
+</resources>

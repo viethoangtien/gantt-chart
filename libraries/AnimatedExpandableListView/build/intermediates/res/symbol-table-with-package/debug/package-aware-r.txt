@@ -1,0 +1,15 @@
+com.example.animatedexpandablelistview
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+drawable ic_launcher
+id listView
+id textHint
+id textTitle
+layout activity_main
+layout group_item
+layout list_item
+string action_settings
+string app_name
+string hello_world
+style AppBaseTheme
+style AppTheme

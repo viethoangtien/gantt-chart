@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/libraries/AnimatedExpandableListView/AnimatedExpandableListView.iml" filepath="$PROJECT_DIR$/libraries/AnimatedExpandableListView/AnimatedExpandableListView.iml" group="DreamPlan-master/libraries/AnimatedExpandableListView" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DreamPlan-master.iml" filepath="$PROJECT_DIR$/.idea/modules/DreamPlan-master.iml" group="DreamPlan-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="DreamPlan-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" group="DreamPlan-master/libraries" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/paralloid/paralloid.iml" filepath="$PROJECT_DIR$/libraries/paralloid/paralloid.iml" group="DreamPlan-master/libraries/paralloid" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/tablefixheaders/tablefixheaders.iml" filepath="$PROJECT_DIR$/libraries/tablefixheaders/tablefixheaders.iml" group="DreamPlan-master/libraries/tablefixheaders" />
+    </modules>
+  </component>
+</project>

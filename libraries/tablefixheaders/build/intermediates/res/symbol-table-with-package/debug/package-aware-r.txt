@@ -1,0 +1,11 @@
+com.inqbarna.tablefixheaders
+color shadow_end
+color shadow_start
+dimen shadow_size
+drawable shadow_bottom
+drawable shadow_left
+drawable shadow_right
+drawable shadow_top
+id tag_column
+id tag_row
+id tag_type_view
