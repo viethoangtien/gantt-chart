@@ -1,6 +1,7 @@
 com.inqbarna.tablefixheaders
 color shadow_end
 color shadow_start
+dimen project_height
 dimen shadow_size
 drawable shadow_bottom
 drawable shadow_left

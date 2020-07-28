@@ -96,9 +96,9 @@ public class BarView extends View {
         statusLength = length * status / 10;
 
         startX = dis_start * dx;
-        startY = dy / 3;
+        startY = dy / 4;
         endX = startX + length;
-        endY = dy / 3 * 2;
+        endY = dy / 4 * 3;
 
         rect = new Rect(startX, startY, endX, endY);
         shadowRect = new Rect(startX+diff, startY+diff, endX+diff, endY+diff);
@@ -106,7 +106,7 @@ public class BarView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawRect(shadowRect, shadow);
+//        canvas.drawRect(shadowRect, shadow);
         canvas.drawRect(rect, mFillPaint2);
         canvas.drawRect(startX, startY, startX + statusLength, endY, mFillPaint1);
     }

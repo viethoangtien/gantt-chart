@@ -18,7 +18,8 @@ public final class R {
     public static final class dimen {
         private dimen() {}
 
-        public static int shadow_size = 0x7f080001;
+        public static int project_height = 0x7f080001;
+        public static int shadow_size = 0x7f080002;
     }
     public static final class drawable {
         private drawable() {}

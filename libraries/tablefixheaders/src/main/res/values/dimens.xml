@@ -2,5 +2,5 @@
 <resources>
 
     <dimen name="shadow_size">8dip</dimen>
-
+    <dimen name="project_height">111dp</dimen>
 </resources>

@@ -1,3 +1,4 @@
+include ':ganttlibrary'
 include ':app'
 include ':libraries:paralloid'
 include ':libraries:AnimatedExpandableListView'

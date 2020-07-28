@@ -3,7 +3,10 @@ package com.nama_gatsuo.dreamplan.View;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.ColorSpace;
 import android.graphics.Paint;
+import android.graphics.drawable.ColorDrawable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -39,7 +42,7 @@ public class ScaleView extends View {
         mLinePaint.setColor(Color.GRAY);
 
         mFillPaint = new Paint();
-        mFillPaint.setColor(getResources().getColor(R.color.scale_dayoff));
+        mFillPaint.setColor(getResources().getColor(R.color.color_white));
     }
 
     public void setRange(DateTime minDate, DateTime maxDate) {
@@ -54,7 +57,7 @@ public class ScaleView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawColor(Color.rgb(255, 255, 255));
+        canvas.drawColor(getResources().getColor(R.color.color_white));
         int height = canvas.getHeight();
 
         for (int i = 0; i < nx; i++) {
@@ -62,11 +65,11 @@ public class ScaleView extends View {
 
             // 土日の場合は背景に色をつける
             if (dayOfWeek == 6) {
-                canvas.drawRect(dx*i, 0, dx*(i+2), height, mFillPaint);
+                canvas.drawRect(dx * i, 0, dx * (i + 2), height, mFillPaint);
             }
 
             // 区切り線
-            canvas.drawLine(dx*i, 0, dx*i, height, mLinePaint);
+            canvas.drawLine(dx * i, 0, dx * i, height, mLinePaint);
 
             minDate = minDate.plusDays(1);
         }

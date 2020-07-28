@@ -23,8 +23,8 @@ import android.widget.Scroller;
 /**
  * This view shows a table which can scroll in both directions. Also still
  * leaves the headers fixed.
- * 
- * @author Brais Gabín (InQBarna)
+ *
+ * @author Brais Gabï¿½n (InQBarna)
  */
 public class TableFixHeaders extends ViewGroup {
 	private int currentX;
@@ -69,7 +69,7 @@ public class TableFixHeaders extends ViewGroup {
 
 	/**
 	 * Simple constructor to use when creating a view from code.
-	 * 
+	 *
 	 * @param context
 	 *            The Context the view is running in, through which it can
 	 *            access the current theme, resources, etc.
@@ -84,10 +84,10 @@ public class TableFixHeaders extends ViewGroup {
 	 * that were specified in the XML file. This version uses a default style of
 	 * 0, so the only attribute values applied are those in the Context's Theme
 	 * and the given AttributeSet.
-	 * 
+	 *
 	 * The method onFinishInflate() will be called after all children have been
 	 * added.
-	 * 
+	 *
 	 * @param context
 	 *            The Context the view is running in, through which it can
 	 *            access the current theme, resources, etc.
@@ -125,7 +125,7 @@ public class TableFixHeaders extends ViewGroup {
 
 	/**
 	 * Returns the adapter currently associated with this widget.
-	 * 
+	 *
 	 * @return The adapter used to provide this view's content.
 	 */
 	public TableAdapter getAdapter() {
@@ -134,7 +134,7 @@ public class TableFixHeaders extends ViewGroup {
 
 	/**
 	 * Sets the data behind this TableFixHeaders.
-	 * 
+	 *
 	 * @param adapter
 	 *            The TableAdapter which is responsible for maintaining the data
 	 *            backing this list and for producing a view to represent an

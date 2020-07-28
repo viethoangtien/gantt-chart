@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_line_item_task">
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="task sample"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/task_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_alignLeft="@id/task_name"
+            android:layout_marginRight="2dp"
+            android:layout_below="@id/task_name" />
+
+        <com.nama_gatsuo.dreamplan.View.TriangleView
+            android:id="@+id/tv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@id/task_startDate"
+            android:layout_alignTop="@id/task_startDate" />
+
+        <TextView
+            android:id="@+id/task_endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/tv"
+            android:layout_alignTop="@id/tv" />
+
+        <com.nama_gatsuo.dreamplan.View.StatusView
+            android:id="@+id/task_status"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    <!-- 影部分 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary_dark" />
+</LinearLayout>

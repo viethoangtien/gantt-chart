@@ -42,11 +42,11 @@ public class CalendarView extends View {
 
         mCharPaint = new Paint();
         mCharPaint.setAntiAlias(true);
-        mCharPaint.setColor(Color.BLACK);
-        mCharPaint.setTextSize(8.f * scale);
+        mCharPaint.setColor(getResources().getColor(R.color.color_white));
+        mCharPaint.setTextSize(30.f * scale);
 
         mLinePaint = new Paint();
-        mLinePaint.setColor(Color.GRAY);
+        mLinePaint.setColor(getResources().getColor(R.color.color_white));
 
         mFillPaint = new Paint();
         mFillPaint.setColor(getResources().getColor(R.color.scale_dayoff));
@@ -64,7 +64,7 @@ public class CalendarView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawColor(Color.rgb(255, 255, 255));
+        canvas.drawColor(getResources().getColor(R.color.color_title_date));
         int height = canvas.getHeight();
 
         for (int i = 0; i < nx; i++) {
@@ -73,21 +73,21 @@ public class CalendarView extends View {
 
             // 月を描画
             if (dayOfMonth == 1) {
-                canvas.drawText(String.valueOf(minDate.getMonthOfYear()), dx*i+3*scale, height/2-3*scale, mCharPaint);
-                canvas.drawLine(dx*i, 0, dx*i, height/2, mLinePaint);
+                canvas.drawText(String.valueOf(minDate.getMonthOfYear()) + "月", dx * i + 3 * scale, height / 2 - 3 * scale, mCharPaint);
+                canvas.drawLine(dx * i, 0, dx * i, height / 2, mLinePaint);
             }
 
             // 土日の場合は背景に色をつける
             if (dayOfWeek == 6 || dayOfWeek == 7) {
-                canvas.drawRect(dx*i, height/2, dx*(i+1), height, mFillPaint);
+                canvas.drawRect(dx * i, height / 2, dx * (i + 1), height, mFillPaint);
             }
 
             // 日を描画
-            canvas.drawText(String.valueOf(dayOfMonth), dx*i+10, height-10, mCharPaint);
+            canvas.drawText(String.valueOf(dayOfMonth), dx * i + 10, height - 10, mCharPaint);
 
             // 区切り線
-            canvas.drawLine(dx*i, height/2, dx*i, height, mLinePaint);
-            canvas.drawLine(dx*i, height/2, dx*(i+1)-1, height/2, mLinePaint);
+            canvas.drawLine(dx * i, height / 2, dx * i, height, mLinePaint);
+            canvas.drawLine(dx * i, height / 2, dx * (i + 1) - 1, height / 2, mLinePaint);
 
             minDate = minDate.plusDays(1);
         }
